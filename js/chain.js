@@ -13,14 +13,21 @@
 //   }
 // });
 
-function(){
-  $('#navId li a').click(function(){
-    $('#navId li').removeClass();
-    $($(this).attr('href')).addClass('active');
+// function(){
+//   $('#navId li a').click(function(){
+//     $('#navId li').removeClass();
+//     $($(this).attr('href')).addClass('active');
 
-  });
+//   });
 
   
   
 
-}
+// }
+
+
+$('#sidebar').affix({
+  offset: {
+    top: 50
+  }
+});
