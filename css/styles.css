@@ -55,9 +55,6 @@
 
 
 
-
-
-
 .navbar-alignit .navbar-header {
 	  -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
@@ -80,7 +77,7 @@
 
 }
 
-#navId .active a { background:#41a47a!important }
+#navId .active a { background: #41a47a!important; }
 
 
 
@@ -88,14 +85,14 @@
 	z-index: 9999;
 }
 
-.nav1{
+/*.nav1{
   padding-top: 20px;
-}
+}*/
 
 
 
 body {
-  font-family: "Lato";
+  font-family: "Hind";
 }
 
 
@@ -148,7 +145,7 @@ body {
 
 .about-sum-col2 p{
   font-size: larger;
-  font-family: tahoma; 
+  /*font-family: tahoma; */
 }
 #articl{
   list-style: none;
@@ -241,6 +238,9 @@ h1{
   text-align: center;
   margin-bottom: 50px;
   margin-top: 40px;
+  padding: 50px 0px;
+  background-color: #41a47a;
+  color: white;
 }
 
 .profile_info p{
@@ -322,7 +322,7 @@ h1{
 
 .fontfa{
   font-size:30px !important;
-  width: 60px !important;  
+  /*width: 60px !important;  */
   /*display: block !important;*/}
 
 .fa:hover {
