@@ -71,40 +71,76 @@
 
 <!--contact-->
 
-<div class="container-fluid contact_con">
+<div class="container">
+<div class="row">
+<div class="col-md-offset-2 col-md-8">
+<div class="contactForm">
+<form action="contacts.php" method="post">
+<h4 style="text-align: center; color: #41a47a">Contact us</h4>
+<hr style="border-top: 1px solid #41a47a;">
+
+   <div class="form-group">
+    <label for="contactName">Name</label>
+    <input type="text" class="form-control" id="contactName" placeholder="Enter email" name="sender">
+  </div>
+
+  <div class="form-group">
+    <label for="contactEmail">Email address</label>
+    <input type="email" class="form-control" id="contactEmail" placeholder="Enter email" name="senderEmail">
+    <small id="email2" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  
+  
+  <div class="form-group">
+    <label for="contactMes">Message</label>
+    <textarea class="form-control" id="contactMes" rows="3" name="message"></textarea>
+  </div>
+  
+ 
+  <!-- <button type="submit" class="btn btnContact" name="submit">Submit</button> -->
+
+  <input type="submit" name="submit">
+</form>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- <div class="container-fluid contact_con">
  <div class="row">
       <div class="col-md-6 col-md-offset-3">
         <div class="well well-sm">
           <form class="form-horizontal" action="" method="post">
           <fieldset>
-            <legend class="text-center">TELL US SOMETHING</legend>
+            <legend class="text-center">TELL US SOMETHING</legend>-->
     
             <!-- Name input-->
-            <div class="form-group">
+            <!-- <div class="form-group">
               <label class="col-md-3 control-label" for="name">Name</label>
               <div class="col-md-9">
                 <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
               </div>
             </div>
-    
+     -->
             <!-- Email input-->
-            <div class="form-group">
+            <!-- <div class="form-group">
               <label class="col-md-3 control-label" for="email">Your E-mail</label>
               <div class="col-md-9">
                 <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
               </div>
-            </div>
+            </div> -->
     
             <!-- Message body -->
-            <div class="form-group">
+           <!--  <div class="form-group">
               <label class="col-md-3 control-label" for="message">Your message</label>
               <div class="col-md-9">
                 <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
               </div>
             </div>
-    
+     -->
             <!-- Form actions -->
-            <div class="form-group">
+            <!-- <div class="form-group">
               <div class="col-md-12 text-right">
                 <button type="submit" class="btn btn-primary btn-lg">Submit</button>
               </div>
@@ -135,7 +171,7 @@
 </div>
 </div>
 </div>
-</section>
+</section> --> 
 
 
 
@@ -220,7 +256,7 @@
 
 </footer>
 
-
+<script type="text/javascript" async="async" defer="defer" data-cfasync="false" src="https://mylivechat.com/chatinline.aspx?hccid=61864518"></script>
   </body>
 
 	

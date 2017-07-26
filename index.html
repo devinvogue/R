@@ -10,12 +10,13 @@
     
     <!--flavicon-->
     
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="images/favicon/manifest.json">
-    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="theme-color" content="#ffffff">
+<link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
   </head>
   <body>
     <nav class="navbar navbar-fixed-top navbar-inverse" id="topNav">
@@ -175,11 +176,20 @@
       
       <div class="row" id="news"> 
        
-          <div class="col-md-8 col-sm-12 col-lg-4 col-xs-12" >
+          <div class="col-md-6 col-sm-12 col-lg-4 col-xs-12" >
 
             <div class="newsDiv" class="bounceInLeft">
 
             <a class="twitter-timeline" data-width="500" data-height="700" data-theme="dark" data-link-color="#41a47a" href="https://twitter.com/Climatechange54">Tweets by Climatechange54</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+            </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12 col-lg-4 col-xs-12" >
+
+            <div class="newsDiv" class="bounceInLeft">
+
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FClimateChangeAfrica%2Fposts%2F1707046339550116&width=500&show_text=true&height=498&appId" width="500" height="498" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 
             </div>
             </div>
@@ -234,7 +244,7 @@
             
             <div class="row">
               <div class="col-md-4"><div class="joinCol"><img src="images/chain-join.png" class="teamPic"> </div></div>
-              <div class="col-md-4"><div class="joinCol"><img src="images/The-Team.png" class="teamPic"> </div></div>
+              <div class="col-md-4"><div class="joinCol"> <img src="images/The-Team.png" class="teamPic"> </div></div>
               <div class="col-md-4"><div class="joinCol"><img src="images/chain-join1.png" class="teamPic"> </div></div>
             </div>
 
@@ -244,15 +254,19 @@
               <div class="col-md-2"></div>
               <div class="col-md-5"><div class="joinCol"><img src="images/chain-join1.png" class="join"></div></div>
             </div> -->
-            <div class="row">
+
+            <!-- <div class="row">
               <div class="col-md-12"><div class="joinCol"><h4 style="text-align: center;"> Interested in taking action against Climate Change?</h4></div></div>
-            </div>
+            </div> -->
+
             <div class="row">
               <div class="col-md-5"></div>
               <div class="col-md-2"><div class="joinCol animated infinite pulse">
                 <button type="button" data-toggle="modal" data-target="#joinModal" style="background-color: #41a47a" class=" btn btnJoinNow">JOIN NOW</button>
                 <!-- <a href="#contactModal" role="button" data-toggle="modal" class="btn btn-default btn-lg"><i class="fa fa-contact "></i> <span class="network-name">Contact</span></a> -->
-              </div></div>
+              </div>
+              </div>
+              </div>
               <div class="col-md-5"></div>
               <!--join Modal-->
               <div id="joinModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
@@ -265,20 +279,37 @@
                     <div class="modal-body" style="padding-left: 20px;">
                       <div class="containter">
                         <div class="row">
-                          <form class="form-horizontal" name="commentform" method="post" action="send_form_email.php">
+                          <form class="form-horizontal" name="commentform" method="post" action="joinNow.php">
+                          <div class="alert alert-error"></div>
                             <div class="col-xs-8">
                               <div class="form-group">
-                                <label for="InputName" class="col-lg-4 control-label">Name</label>
+                                <label for="InputName" class="col-lg-4 control-label">Surname Name</label>
                                 <div class="col-lg-8">
                                   <input type="text" class="form-control" name="first_name" id="first_name" placeholder="Enter your full name" required>
                                 </div>
                               </div>
+
+                              <div class="form-group">
+                                <label for="InputName" class="col-lg-4 control-label">First Name</label>
+                                <div class="col-lg-8">
+                                  <input type="text" class="form-control" name="first_name" id="first_name" placeholder="Enter your full name" required>
+                                </div>
+                              </div>
+
                               <div class="form-group">
                                 <label for="InputEmail" class="col-lg-4 control-label">Email</label>
                                 <div class="col-lg-8">
                                   <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address" required  >
                                 </div>
                               </div>
+
+                              <div class="form-group">
+                                <label for="InputName" class="col-lg-4 control-label">Mobile Number<span style="color: #ccc">(This will be used for sms.)</span></label>
+                                <div class="col-lg-8">
+                                  <input type="tel" class="form-control" name="first_name" id="telephoneN" placeholder="Enter your mobile number">
+                                </div>
+                              </div>
+
                               <!--country-->
                               <div class="form-group">
                                 <label for="InputEmail" class="col-lg-4 control-label">Country</label>
@@ -593,23 +624,23 @@
                             </div> -->
 
                             <div class="col-md-7 col-sm-6 foreFooter-col " >
-                              <h4 class="FootSoc">Social media</h4>
+                              <!-- <h4 class="FootSoc">Social media</h4> -->
                               
                               <a href="#" class="fa fa-twitter fontfa"></a>
-                              <a href="#" class="fa fa-google fontfa"></a>
+                              <!-- <a href="#" class="fa fa-google fontfa"></a> -->
                               <a href="#" class="fa fa-instagram fontfa"></a>
                               <a href="#" class="fa fa-facebook fontfa"></a>
                             </div>
                             
                             <div class="col-md-5 col-sm-6 foreFooter-col">
                               
-                              <h3 class="FootSoc">Subscribe now</h3>
+                              <!-- <h3 class="FootSoc">Subscribe now</h3> -->
                               
                               
                               <div class="form-group formSub">
                                 
                                 
-                                <input id="name" name="name" type="text" placeholder="email@gmail.com" class="form-control subForm">
+                                <h4>Subsribe to our newsletters</h4><input id="name" name="name" type="text" placeholder="email@gmail.com" class="form-control subForm">
                                 <button type="button" data-toggle="modal" data-target="#Subscribet" style="background-color: #41a47a" class=" btn btnSubscribe">SUBSCRIBE</button>
                               </div>
                               
@@ -629,7 +660,7 @@
                             <!--     <div class=" col-md-12 col-sm-12 col-lg-12 articles" style="background-color:red;">
                               -->
                               <div class="col-md-12 ">
-                                <div id="xxx" class="wow bounceInLeft">copyright c 2017</div>
+                                <div id="xxx" class="wow bounceInLeft"> © 2017 techyLov. All rights reserved.</div>
                               </div>
                               
                               

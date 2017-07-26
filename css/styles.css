@@ -399,3 +399,13 @@ background-color: #f5f5f5
 .joinCol{
   padding: 5px;
 }
+
+.contactForm{
+  border: 1px solid #41a47a;
+  padding: 30px;
+    margin: 80px 0px;
+}
+
+.btnContact{
+  background-color: #41a47a
+}
