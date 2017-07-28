@@ -5,8 +5,9 @@
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Hind' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Hind|Lato|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
     
     <!--flavicon-->
     
@@ -28,13 +29,15 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           </button>
-          <div class="navbar-brand hidden-sm"> <img src="images/chain-logo.png" alt="CHAIN"></div>
-           <div class="navbar-brand navbar-brand1 visible-sm-inline"> <img src="images/chain-logo.png" alt="CHAIN"></div>
+          
+         <a class="navbar-brand hidden-sm" href="index.html"> <img src="images/chain-logo.png" alt="CHAIN logo"></a>
+         <a class="navbar-brand navbar-brand1 visible-sm-inline" href="index.html"> <img src="images/chain-logo.png" alt="CHAIN logo"></a>
+           <!-- <div class="navbar-brand navbar-brand1 visible-sm-inline"> <img src="images/chain-logo.png" alt="CHAIN"></div> -->
           
         </div>
         <div id="navbar3" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right navRight font-bold" id="navId">
-            <li class="active"><a href="#">Home</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
@@ -52,14 +55,16 @@
                 
               </ul>
             </li>
-            <li class="dropdown">
+
+            <li><a href="gallery.html">Gallery</a></li>
+            <!-- <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Gallery <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="#">Videos</a></li>
-                <li><a href="#">Images</a></li>
+                <li><a href="gallery.html">Images</a></li>
                 
               </ul>
-            </li>
+            </li> -->
             
             <li><a href="forum.html">Forum</a></li>
             <li><a href="contacts.html">Contact</a></li>
@@ -82,7 +87,7 @@
           <div class="carousel-inner">
             <div class="item active">
               <img src="images/pexels-photo.jpeg" alt="Los Angeles" style="width:100%; height: 600px;">
-              <div class="carousel-caption">
+              <div class="carousel-caption" style="font-family: 'Lato', sans-serif;">
                 <h3>picTitle</h3>
                 <p>climate pic</p>
               </div>
@@ -121,7 +126,7 @@
       
       
       <div class="row" id="article">
-        <!--     <div class=" col-md-12 col-sm-12 col-lg-12 articles" style="background-color:red;">
+        <!     <div class=" col-md-12 col-sm-12 col-lg-12 articles" style="background-color:red;">
           
           <div class="col-md-4 col-sm-12 col-lg-4 col-xs-12 os-animation.animated.fadeInUp" data-os-animation="fadeInUp" data-os-animation-delay="100ms" style="animation-delay: 100ms;">
             <div id="xx">
@@ -156,10 +161,10 @@
           
         </div>
       </div> -->
-      <section class="about-sum wow slideInRight" data-wow-delay="2s" >
-        
+      <section class="about-sum " >
+        <div class="container">
         <div class="row">
-          <div class="col-md-12 about-sum-col"> <h1>ABOUT US</h1></div>
+          <div class="col-md-12 about-sum-col"> <h1  class="wow fadeInRight" data-wow-delay="2s" >ABOUT US</h1></div>
         </div>
         <div class="row">
           <div class="col-md-12 about-sum-col2">
@@ -167,32 +172,34 @@
           </div>
         </div>
       </div>
-      
-    </section>
-    <section class="article_section_header wow slideInLeft" data-wow-duration="4s" >
+      </section>
+    
+    <section class="article_section_header " >
       <h1 class="">LATEST NEWS AND UPDATES</h1>
     </section>
-     <div class="container-fluid wow slideInLeft" data-wow-duration="2s">
+     <div class="container-fluid " >
       
       <div class="row" id="news"> 
        
-          <div class="col-md-6 col-sm-12 col-lg-4 col-xs-12" >
+          <div class="col-md-12 col-sm-12" style="text-align: center; >
 
             <div class="newsDiv" class="bounceInLeft">
 
-            <a class="twitter-timeline" data-width="500" data-height="700" data-theme="dark" data-link-color="#41a47a" href="https://twitter.com/Climatechange54">Tweets by Climatechange54</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <a class="twitter-timeline fadeInLeft" data-wow-delay="2s" " data-width="1000" data-height="700" data-theme="light" data-link-color="#41a47a" href="https://twitter.com/Climatechange54" ">Tweets by Climatechange54</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
             </div>
             </div>
 
-            <div class="col-md-6 col-sm-12 col-lg-4 col-xs-12" >
+            <!-- <div class="col-md-6 col-sm-12" >
 
             <div class="newsDiv" class="bounceInLeft">
 
             <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FClimateChangeAfrica%2Fposts%2F1707046339550116&width=500&show_text=true&height=498&appId" width="500" height="498" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 
             </div>
-            </div>
+            </div> -->
+
+            
            
 </div>
 </div>
@@ -239,13 +246,13 @@
           <!-- </div>
         </div> -->
         <!--join now-->
-        <section id="joinNow" style="background-color: #eee;" class="wow zoomIn" data-wow-duration="2s"">
+        <section id="joinNow" style="background-color: #eee;" >
           <div class="container">
             
-            <div class="row">
-              <div class="col-md-4"><div class="joinCol"><img src="images/chain-join.png" class="teamPic"> </div></div>
-              <div class="col-md-4"><div class="joinCol"> <img src="images/The-Team.png" class="teamPic"> </div></div>
-              <div class="col-md-4"><div class="joinCol"><img src="images/chain-join1.png" class="teamPic"> </div></div>
+            <div class="row" style="margin-bottom: 20px;">
+              <div class="col-md-4 col-sm-12 wow zoomIn" data-wow-duration="2s"><div class="img-responsive joinCol"><img src="images/chain-join.png" class="teamPic"> </div></div>
+              <div class="col-md-4 hidden-sm wow zoomIn" data-wow-duration="2s""><div class="img-responsive joinCol"> <img src="images/dearSun1.png" class="teamPic"> </div></div>
+              <div class="col-md-4 col-sm-12 wow zoomIn" data-wow-duration="2s""><div class="img-responsive joinCol"><img src="images/chain-join2.png" class="teamPic"> </div></div>
             </div>
 
 
@@ -262,7 +269,7 @@
             <div class="row">
               <div class="col-md-5"></div>
               <div class="col-md-2"><div class="joinCol animated infinite pulse">
-                <button type="button" data-toggle="modal" data-target="#joinModal" style="background-color: #41a47a" class=" btn btnJoinNow">JOIN NOW</button>
+                <button type="button" data-toggle="modal" data-target="#joinModal" style="background-color: #41a47a; color: white;" class=" btn btnJoinNow">JOIN NOW</button>
                 <!-- <a href="#contactModal" role="button" data-toggle="modal" class="btn btn-default btn-lg"><i class="fa fa-contact "></i> <span class="network-name">Contact</span></a> -->
               </div>
               </div>
@@ -609,7 +616,7 @@
                   
                   <footer class="footer">
                     <!--foreFooter-->
-                    <div class="topFooter wow zoomInLeft" data-wow-duration="2s">
+                    <div class="topFooter ">
                       <div class="container">
                         
                         
@@ -623,21 +630,33 @@
                               
                             </div> -->
 
-                            <div class="col-md-7 col-sm-6 foreFooter-col " >
+                            <div class="col-md-4 col-sm-6 foreFooter-col wow fadeIn" data-wow-duration="2s " >
                               <!-- <h4 class="FootSoc">Social media</h4> -->
                               
-                              <a href="#" class="fa fa-twitter fontfa"></a>
+                              <a href="https://www.facebook.com/ClimateChangeAfrica/" class="fa fa-twitter fontfa"></a>
                               <!-- <a href="#" class="fa fa-google fontfa"></a> -->
-                              <a href="#" class="fa fa-instagram fontfa"></a>
-                              <a href="#" class="fa fa-facebook fontfa"></a>
+                              <a href="@Climatechange54" class="fa fa-instagram fontfa"></a>
+                              <a href="www.instagram.com/chain_africa/" class="fa fa-facebook fontfa"></a>
+                            </div>
+
+                            <div class="col-md-3 col-sm-6 foreFooter-col " style="text-align: center;">
+                              <!-- <h4 class="FootSoc">Social media</h4> -->
+                              
+                              
+       
+                              <div class="text-left wow fadeIn" data-wow-duration="2s" >
+                             <button type="button" class="btn text-uppercase btn-lg" style="background-color:#41a47a; margin-top: 14px;">Donate <span class="glyphicon glyphicon-heart" aria-hidden="true"></span></button>
+ 
+        
+                            </div>
                             </div>
                             
-                            <div class="col-md-5 col-sm-6 foreFooter-col">
+                            <div class="col-md-4 col-sm-6 foreFooter-col">
                               
                               <!-- <h3 class="FootSoc">Subscribe now</h3> -->
                               
                               
-                              <div class="form-group formSub">
+                              <div class="form-group formSub wow fadeIn" data-wow-duration="2s ">
                                 
                                 
                                 <h4>Subsribe to our newsletters</h4><input id="name" name="name" type="text" placeholder="email@gmail.com" class="form-control subForm">
