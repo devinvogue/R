@@ -132,7 +132,7 @@
 
             <div class="newsDiv">
 
-            <a class="twitter-timeline fadeIn" data-wow-delay="2s" " data-width="1000" data-height="700" data-theme="light" data-link-color="#41a47a" href="https://twitter.com/Climatechange54" >Tweets by Climatechange54</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <a class="twitter-timeline fadeIn" data-wow-delay="2s" " data-width="700" data-height="700" data-theme="light" data-link-color="#41a47a" href="https://twitter.com/Climatechange54" >Tweets by Climatechange54</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
             </div>
             </div>
@@ -559,28 +559,12 @@
                   
                 </section>
                 
-                <!--foreFooter-->
-                <!-- <div class="container-fluid">
-                  
-                  
-                  <div class="row" id="foreFooter">
-                    <!-    <div class=" col-md-12 col-sm-12 col-lg-12 articles" style="background-color:red;">
-                      -->
-                      <!-- <div class="col-md-4 col-sm-6 foreFooter1">
-                        <div id="xxx">About us</div>
-                      </div>
-                      <div class="col-md-4 col-sm-6">
-                        <div> Address</div>
-                      </div>
-                      <div class="col-md-4 col-sm-6">
-                        <div> Subscribe</div>
-                      </div>
-                      -->
-                      
+                
                       
                     </div>
                   </div>
                   
+                  <div class="green"></div>
                   <footer class="footer">
                     <!--foreFooter-->
                     <div class="topFooter ">
@@ -588,22 +572,14 @@
                         
                         
                         <div class="row" id="foreFooter">
-                          <!--     <div class=" col-md-12 col-sm-12 col-lg-12 articles" style="background-color:red;">
-                            -->
-                            <!-- <div class="col-md-4 col-sm-6 foreFooter-col">
-                              <h4 class="FootSoc">Location</h4>
-                              <div> Accra- Ghana</div>
-                              
-                              
-                            </div> -->
-
+                         
                             <div class="col-md-7 col-sm-6 foreFooter-col wow fadeIn" data-wow-duration="2s " >
                               <!-- <h4 class="FootSoc">Social media</h4> -->
                               
-                              <a href="https://www.facebook.com/ClimateChangeAfrica/" class="fa fa-twitter fontfa"></a>
+                              <a href="https://twitter.com/climatechange54" class="fa fa-twitter fontfa" target="_blank"></a>          
                               <!-- <a href="#" class="fa fa-google fontfa"></a> -->
-                              <a href="@Climatechange54" class="fa fa-instagram fontfa"></a>
-                              <a href="www.instagram.com/chain_africa/" class="fa fa-facebook fontfa"></a>
+                              <a href="https://www.instagram.com/chain_africa/" class="fa fa-instagram fontfa" target="_blank"></a>
+                              <a href="https://www.facebook.com/ClimateChangeAfrica/ " class="fa fa-facebook fontfa" target="_blank"></a>
                             </div>
 
                            
@@ -627,7 +603,7 @@
 <div id="mc_embed_signup">
 <form action="http://github.us16.list-manage.com/subscribe/post?u=7ba5ff3dc62c39c7ea9a3e657&amp;id=1124c66466" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
-  <label for="mce-EMAIL">Subscribe to our mailing list</label>
+  <label for="mce-EMAIL">Subscribe to our newsletter</label>
   <br>
   <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" style="width: 70%; display: inline;" placeholder="email address" required>
     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
@@ -666,7 +642,7 @@
                           </div>
                         </div>
                       </footer>
-                      <script type="text/javascript" async="async" defer="defer" data-cfasync="false" src="https://mylivechat.com/chatinline.aspx?hccid=61864518"></script>
+                      <!-- <script type="text/javascript" async="async" defer="defer" data-cfasync="false" src="https://mylivechat.com/chatinline.aspx?hccid=61864518"></script> -->
                     </body>
                     
                     
@@ -687,65 +663,4 @@
 
 
 
-                <!--PhP code for the email sending, copy this code and nme it send_form_email.php and on line 120 change the link.
-        <?php
-if(isset($_POST['email'])) {
- 
-    // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "your email address";
-    $email_subject = "Email subject";
- 
-
- 
-    // validation expected data exists
-    if(!isset($_POST['first_name']) ||
-        !isset($_POST['email']) ||        
-        !isset($_POST['comments'])) {
-        died('We are sorry, but there appears to be a problem with the form you submitted.');       
-    }
- 
-    $first_name = $_POST['first_name']; // required
-  
-    $email_from = $_POST['email']; // required    
-    $comments = $_POST['comments']; // required
- 
-    $error_message = "";
-    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
-  if(!preg_match($email_exp,$email_from)) {
-    $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
-  }
-    $string_exp = "/^[A-Za-z\s.'-]+$/";
-  if(!preg_match($string_exp,$first_name)) {
-    $error_message .= 'The First Name you entered does not appear to be valid.<br />';
-  }
-
-  if(strlen($comments) < 2) {
-    $error_message .= 'The Comments you entered do not appear to be valid.<br />';
-  }
-  if(strlen($error_message) > 0) {
-    died($error_message);
-  }
-    $email_message = "Form details below.\n\n";
- 
-    function clean_string($string) {
-      $bad = array("content-type","bcc:","to:","cc:","href");
-      return str_replace($bad,"",$string);
-    }
- 
-    $email_message .= "First Name: ".clean_string($first_name)."\n";
-
-    $email_message .= "Email: ".clean_string($email_from)."\n";   
-    $email_message .= "Comments: ".clean_string($comments)."\n";
- 
-// create email headers
-$headers = 'From: '.$email_from."\r\n".
-'Reply-To: '.$email_from."\r\n" .
-'X-Mailer: PHP/' . phpversion();
-@mail($email_to, $email_subject, $email_message, $headers);
-sleep(1);
-echo "<meta http-equiv='refresh' content=\"0; url=http://graphicdesk.ro/index.html\">";
-?>
- 
-<?php
-}
-?>-->
+               
